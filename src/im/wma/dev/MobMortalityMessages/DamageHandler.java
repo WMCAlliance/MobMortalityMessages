@@ -36,8 +36,9 @@ public class DamageHandler implements Listener
 		{
 			if (plugin.enabledMap.get(player)==true)
 			{
-				player.sendMessage(mob.getType()+" health: "+finalHealth+'/'+mob.getMaxHealth()+", took "+evt.getDamage()+" damage.");
+				player.sendMessage(mob.getType()+" health: " + finalHealth + '/' + mob.getMaxHealth()+", took " + evt.getDamage()+ " damage.");
 			}
 		}
 	}
+	
 }

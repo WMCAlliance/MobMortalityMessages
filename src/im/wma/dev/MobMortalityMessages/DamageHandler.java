@@ -29,7 +29,7 @@ public class DamageHandler implements Listener
 		Creature mob = (Creature) evt.getEntity();
 		
 		//Makes all negatives into zeroes
-		int finalHealth = (mob.getHealth()-evt.getDamage() < 0 ? 0 : mob.getHealth()-evt.getDamage());
+		int finalHealth = (int) (mob.getHealth()-evt.getDamage() < 0 ? 0 : mob.getHealth()-evt.getDamage());
 		
 		// If the player has set themselves to receive mob health messages
 		if (plugin.enabledMap.containsKey(player))

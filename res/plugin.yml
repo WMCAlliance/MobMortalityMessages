@@ -7,5 +7,16 @@ main: im.wma.dev.MobMortalityMessages.MobMortalityMessages
 prefix: MMM
 commands:
   mmm:
+    description: Returns the plugin version
+    usage: /mmm
+  mmm toggle:
+    description: Toggles the display of Mob Mortality Messages
+    usage: /mmm toggle
+  mmm version:
+    description: Returns the plugin version
+    usage: /mmm version
+permissions:
+  mmm.messages:
+    description: Allows users to see Mob Mortality Messages
 permission:
   mmm.messages
